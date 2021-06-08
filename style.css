@@ -176,7 +176,7 @@ section{
     grid-column: 1/4;
 }
 
-#section_two{
+#section_wide{
 grid-column: 1/4;
 width: 100%;
 background-image: url(splash/splash.jpg);
