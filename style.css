@@ -156,7 +156,7 @@ p, .link{
     font-size: 1.5vw;
 }
 
-#section_two:hover{
+#section_wide:hover{
     background-color: var(--primary);
 }
 
