@@ -152,6 +152,108 @@ a:hover {
 
 /**************************************************** GENERELT TEMA 2*/
 
+.tema_2 section {
+    grid-column: 2/3;
+    margin-bottom: var(--space-xxl);
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+}
+
+.tema_2 p{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.tema_2 #section_wide {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}    
+
+.tema_2 #section_wide .image{
+    grid-area: 1/1;
+    grid-row: 1/4;
+} 
+
+.tema_2 #section_wide .text{
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}     
+
+.tema_2 #section_wide_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}    
+
+.tema_2 #section_wide_grid .box_1 {
+    grid-column: 1/2;
+}  
+
+.tema_2 #section_wide_grid .box_2 {
+    grid-column: 2/3;
+}  
+
+.tema_2 #section_wide_grid .box_3 {
+    grid-column: 3/4;
+}  
+
+.tema_2 #section_wide_grid .box_1 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_2 #section_wide_grid .box_1 .image_1 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_2 #section_wide_grid .box_1 .text_1 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_2 #section_wide_grid .box_2 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_2 #section_wide_grid .box_2 .image_2 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_2 #section_wide_grid .box_2 .text_2 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_2 #section_wide_grid .box_3 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_2 #section_wide_grid .box_3 .image_3 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_2 #section_wide_grid .box_3 .text_3 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
 /**************************************************** GENERELT TEMA 3*/
 
 .tema_3 section {
@@ -173,21 +275,295 @@ a:hover {
 .tema_3 #section_wide {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
+    margin: 0;
 }    
 
-.tema_3 #section_wide img{
+.tema_3 #section_wide .image{
     grid-area: 1/1;
     grid-row: 1/4;
-}    
+} 
 
 .tema_3 #section_wide .text{
     grid-area: 2/1;
     text-align: center;
     visibility:hidden;
+}     
+
+.tema_3 #section_wide_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
 }    
 
+.tema_3 #section_wide_grid .box_1 {
+    grid-column: 1/2;
+}  
+
+.tema_3 #section_wide_grid .box_2 {
+    grid-column: 2/3;
+}  
+
+.tema_3 #section_wide_grid .box_3 {
+    grid-column: 3/4;
+}  
+
+.tema_3 #section_wide_grid .box_1 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_3 #section_wide_grid .box_1 .image_1 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_3 #section_wide_grid .box_1 .text_1 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_3 #section_wide_grid .box_2 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_3 #section_wide_grid .box_2 .image_2 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_3 #section_wide_grid .box_2 .text_2 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_3 #section_wide_grid .box_3 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_3 #section_wide_grid .box_3 .image_3 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_3 #section_wide_grid .box_3 .text_3 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+} 
 /**************************************************** GENERELT TEMA 4*/
+
+.tema_4 section {
+    grid-column: 2/3;
+    margin-bottom: var(--space-xxl);
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+}
+
+.tema_4 p{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.tema_4 #section_wide {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}    
+
+.tema_4 #section_wide .image{
+    grid-area: 1/1;
+    grid-row: 1/4;
+} 
+
+.tema_4 #section_wide .text{
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}     
+
+.tema_4 #section_wide_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}    
+
+.tema_4 #section_wide_grid .box_1 {
+    grid-column: 1/2;
+}  
+
+.tema_4 #section_wide_grid .box_2 {
+    grid-column: 2/3;
+}  
+
+.tema_4 #section_wide_grid .box_3 {
+    grid-column: 3/4;
+}  
+
+.tema_4 #section_wide_grid .box_1 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_4 #section_wide_grid .box_1 .image_1 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_4 #section_wide_grid .box_1 .text_1 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_4 #section_wide_grid .box_2 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_4 #section_wide_grid .box_2 .image_2 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_4 #section_wide_grid .box_2 .text_2 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_4 #section_wide_grid .box_3 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_4 #section_wide_grid .box_3 .image_3 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_4 #section_wide_grid .box_3 .text_3 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+} 
+
 /**************************************************** GENERELT TEMA 5*/
+
+.tema_5 section {
+    grid-column: 2/3;
+    margin-bottom: var(--space-xxl);
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+}
+
+.tema_5 p{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.tema_5 #section_wide {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}    
+
+.tema_5 #section_wide .image{
+    grid-area: 1/1;
+    grid-row: 1/4;
+} 
+
+.tema_5 #section_wide .text{
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}     
+
+.tema_5 #section_wide_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}    
+
+.tema_5 #section_wide_grid .box_1 {
+    grid-column: 1/2;
+}  
+
+.tema_5 #section_wide_grid .box_2 {
+    grid-column: 2/3;
+}  
+
+.tema_5 #section_wide_grid .box_3 {
+    grid-column: 3/4;
+}  
+
+.tema_5 #section_wide_grid .box_1 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_5 #section_wide_grid .box_1 .image_1 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_5 #section_wide_grid .box_1 .text_1 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_5 #section_wide_grid .box_2 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_5 #section_wide_grid .box_2 .image_2 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_5 #section_wide_grid .box_2 .text_2 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
+
+.tema_5 #section_wide_grid .box_3 {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+}  
+
+.tema_5 #section_wide_grid .box_3 .image_3 {
+    grid-area: 1/1;
+    grid-row: 1/4;
+}  
+
+.tema_5 #section_wide_grid .box_3 .text_3 {
+    grid-area: 2/1;
+    text-align: center;
+    visibility:hidden;
+}  
 
 .profil section {
     grid-column: 2/3;
@@ -264,6 +640,14 @@ margin-left: 0;
 margin-right: 0;
 }
 
+#section_wide_grid{
+    grid-column: 1/4;
+    width: 100%;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
 .section_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -293,24 +677,126 @@ margin-right: 0;
     grid-column: 2/4 ;
 }
 
-/* LAYOUT TEMA 3 */
+/* LAYOUT TEMA 2 */
 
-/* .tema_3 #section_wide  {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0%;
+.tema_2 #section_wide:hover .text {
+    visibility:visible;
+    font-weight: bold;
+    font-size: 300px;
+    color: var(--secondary);
 }
 
-.tema_3 #section_wide .div_wrapper_1 img {
-    grid-column: 1/4;
-} */
+.tema_2 #section_wide_grid .box_1:hover .text_1 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_2 #section_wide_grid .box_2:hover .text_2 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_2 #section_wide_grid .box_3:hover .text_3 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+/* LAYOUT TEMA 3 */
 
 .tema_3 #section_wide:hover .text {
     visibility:visible;
     font-weight: bold;
-    font-size: var(--space-xxl);
-    color: var(--accent);
+    font-size: 300px;
+    color: var(--secondary);
 }
+
+.tema_3 #section_wide_grid .box_1:hover .text_1 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_3 #section_wide_grid .box_2:hover .text_2 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_3 #section_wide_grid .box_3:hover .text_3 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+/* LAYOUT TEMA 3 */
+
+.tema_4 #section_wide:hover .text {
+    visibility:visible;
+    font-weight: bold;
+    font-size: 300px;
+    color: var(--secondary);
+}
+
+.tema_4 #section_wide_grid .box_1:hover .text_1 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_4 #section_wide_grid .box_2:hover .text_2 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_4 #section_wide_grid .box_3:hover .text_3 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+/* LAYOUT TEMA 3 */
+
+.tema_5 #section_wide:hover .text {
+    visibility:visible;
+    font-weight: bold;
+    font-size: 300px;
+    color: var(--secondary);
+}
+
+.tema_5 #section_wide_grid .box_1:hover .text_1 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_5 #section_wide_grid .box_2:hover .text_2 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
+.tema_5 #section_wide_grid .box_3:hover .text_3 {
+    visibility:visible;
+    font-weight: bold;
+    font-size: var(--space-xxl);
+    color: var(--secondary);
+}
+
 
 /* LAYOUT PROFIL */
 
