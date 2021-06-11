@@ -6,6 +6,8 @@
 html {
     --primary: #D19698;
     --secondary:#192E59;
+    --tertiary: #8090A7;
+    --quaternary: #BEA094;
     --accent: #F9ECE4;
     --text: #fff;
   
@@ -70,23 +72,24 @@ main {
     grid-template-columns: 1fr minmax(0, 1200px) 1fr;
 }
 
+
 h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 9vw;
-    letter-spacing: 5px;
+    font-size: var(--space-xl);
+    letter-spacing: var(--space-xs);
     color: var(--secondary);
     margin-top: var(--space-sm);
     margin-bottom: var(--space-xl);
 }
 
-h1 .h1color {
+.h1color {
     color:var(--primary);
 }
 
 h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: var(--space-lg);
-    letter-spacing: 5px;
+    letter-spacing: var(--space-xs);
     color: var(--secondary);
     margin-bottom: var(--space-xl);
     margin-top: var(--space-xxl);
@@ -95,7 +98,7 @@ h2 {
 h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: var(--space-md);
-    letter-spacing: 5px;
+    letter-spacing: var(--space-xs);
     color: var(--secondary);
     margin-bottom: var(--space-lg);
     margin-top: var(--space-lg);
@@ -109,14 +112,14 @@ p .bold {
 
 a{
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
+    letter-spacing: var(--space-xxs);
+    font-size: var(--space-sm);
     color: var(--secondary);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 button {
@@ -129,18 +132,11 @@ button {
     grid-column: 1;
 }
 
-.link{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    color: var(--secondary);
-}
-
 .link:hover {
     color:var(--accent);
 }
 
-/**************************************************** GENERELT FOOTER*/
+/**************************************************** FOOTER*/
 
 footer{
     display: grid;
@@ -155,6 +151,44 @@ footer p{
     color: var(--primary);
   grid-row: 2/3;
 }
+
+/**************************************************** BREADCRUMBS */
+/* Style the list */
+ul.breadcrumb {
+    grid-column: 1/4;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: var(--quaternary);
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: var(--space-sm);
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--accent);
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: var(--secondary);
+  }
 
 /**************************************************** GENERELT INDEX*/
 
@@ -437,6 +471,7 @@ footer p{
     margin-right: var(--space-md);
 }
 
+
 .profil p{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 3px;
@@ -445,6 +480,40 @@ footer p{
     color: var(--secondary);
     margin-bottom: var(--space-sm);
 }
+
+.profil .image_right{
+    grid-column: 2/3 ;
+}
+
+/**************************************************** GENERELT KONTAKT*/
+
+.contact section {
+    grid-column: 2/3;
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+}
+
+.contact p{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--secondary);
+}
+
+form label {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: var(--space-sm);
+    margin-top: var(--space-lg);
+  }
+  
+  .form_felt {
+    display: grid;
+  }
 
 /**************************************************** FORSIDE DESKTOP */
 
@@ -859,13 +928,5 @@ margin-right: 0;
     grid-column: 1/2;
     text-align: left;
     padding: 20px;
-}
-
-.profil .image_right{
-    grid-column: 2/3 ;
-}
-
-.profil li{
-    margin-left: var(--space-xl);
 }
 
