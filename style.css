@@ -19,7 +19,24 @@ html {
     --space-lg: 2rem;
     --space-xl: 3rem;
     --space-xxl: 6rem;
-    --space-xxxl: 15rem;
+    --space-xxxl: 18rem;
+
+    --size-hoverbig:6rem;
+    --size-hoversmall:4rem;
+    --size-h1phone:2.4rem;
+    --size-h1desktop:4rem;
+    --size-h2phone:2rem;
+    --size-h2desktop:3rem;
+    --size-h3phone:1.5rem;
+    --size-h3desktop:3rem;
+    --size-h4phone:1.5rem;
+    --size-h4desktop:3rem;
+    --size-aphone:1rem;
+    --size-adesktop:1rem;
+    --size-pphone:1rem;
+    --size-pdesktop:1rem;
+    --size-liphone:1rem;
+    --size-lidesktop:1rem;
   }
 
 body{
@@ -70,7 +87,7 @@ header nav ul {
 /**************************************************** BREADCRUMBS */
 
 /* Style the list */
-ul.breadcrumb {
+.breadcrumb {
     grid-column: 1/4;
     padding: 10px 16px;
     list-style: none;
@@ -78,32 +95,24 @@ ul.breadcrumb {
   }
   
   /* Display list items side by side */
-  ul.breadcrumb li {
+  .breadcrumb li {
     display: inline;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: var(--space-sm);
+    font-family: 'Karla', sans-serif;
+    letter-spacing: var(--space-xxs);
+    font-size: var(--size-liphone);
     color: var(--secondary);
-    text-decoration: none;
-    font-weight: lighter;
   }
   
   /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb li+li:before {
+  .breadcrumb li+li:before {
     padding: 8px;
     color: var(--accent);
     content: "/\00a0";
   }
   
   /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
+  .breadcrumb li a {
     color: var(--accent);
-    text-decoration: none;
-  }
-  
-  /* Add a color on mouse-over */
-  ul.breadcrumb li a:hover {
-    color: var(--secondary);
   }
 
 /**************************************************** GENERELT */
@@ -120,9 +129,9 @@ section {
 }
 
 h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-lg);
-    letter-spacing: var(--space-xs);
+    font-family: 'Spectral', serif;
+    font-size: var(--size-h1phone);
+    letter-spacing: var(--space-xxs);
     color: var(--secondary);
     margin-top: var(--space-sm);
     margin-bottom: var(--space-xl);
@@ -133,51 +142,48 @@ h1 {
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-md);
-    letter-spacing: var(--space-xs);
+    font-family: 'Spectral', serif;
+    font-size: var(--size-h2phone);
+    letter-spacing: var(--space-xxs);
     color: var(--secondary);
     margin-bottom: var(--space-xl);
     margin-top: var(--space-xxl);
 }
 
 h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-md);
-    letter-spacing: var(--space-xs);
+    font-family: 'Spectral', serif;
+    font-size: var(--size-h3phone);
+    letter-spacing: var(--space-xxs);
     color: var(--secondary);
     margin-bottom: var(--space-lg);
     margin-top: var(--space-lg);
 }
 
 h4 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-sm);
-    letter-spacing: var(--space-xs);
+    font-family: 'Spectral', serif;
+    font-size: var(--size-h4phone);
+    letter-spacing: var(--space-xxxs);
     color: var(--accent);
-    margin-bottom: var(--space-lg);
-    margin-top: var(--space-lg);
 }
 
 p{
-font-family: 'Oswald', sans-serif;
-letter-spacing: var(--space-xxxs);
-font-size: var(--space-sm);
-font-weight: lighter;
-color: var(--secondary);
-margin-bottom: var(--space-lg);
+    font-family: 'Karla', sans-serif;
+    font-size: var(--size-pphone);
+    line-height: var(--space-lg);
+    color: var(--secondary);
+    margin-bottom: var(--space-lg);
 }
 
 p .bold {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: bold;
 }
 
 
 a{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Karla', sans-serif;
     letter-spacing: var(--space-xxs);
-    font-size: var(--space-sm);
+    font-size: var(--size-aphone);
     color: var(--secondary);
     text-decoration: none;
 }
@@ -199,17 +205,16 @@ button {
 /**************************************************** FOOTER*/
 
 footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto 1fr;
     background-color: var(--secondary);
-    height: var(--space-xxxl);
     margin-top: var(--space-xxl);
+    padding: var(--space-sm);
 }
 
 footer .boks{
     grid-row: 2/3;
     text-align: center;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
 }
 footer p{
     color: var(--accent);
@@ -370,13 +375,11 @@ footer p{
 /**************************************************** GENERELT KONTAKT*/
 
 form label {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-size: var(--size-pphone);
+    line-height: var(--space-lg);
     color: var(--secondary);
-    margin-bottom: var(--space-sm);
-    margin-top: var(--space-lg);
+    margin-bottom: var(--space-lg);
   }
   
   .form_felt {
@@ -413,24 +416,36 @@ header .logo {
 /******************************************** HEADER */
 
 footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    padding: var(--space-xxl);
     margin-top: 0;
 }
+
+/* Add a color on mouse-over */
+.breadcrumb li a:hover {
+    color: var(--secondary);
+  }
 
 /******************************************** TEXTER */
 
 h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 4.2vw;
-    letter-spacing: 5px;
-    color: var(--secondary);
+    font-size: var(--size-h1desktop);
+    /* letter-spacing: 5px; */
+    /* color: var(--secondary); */
 }
 
 h2{
-    font-size: 3vw;
+    font-size: var(--size-h2desktop);
 }
 
 p, .link{
-    font-size: 1.5vw;
+    font-size: var(--size-pdesktop);
+}
+
+header a{
+    font-size: var(--size-adesktop);
 }
 
 header a:hover {
@@ -525,29 +540,29 @@ margin-right: 0;
 
 .tema_2 #section_wide:hover .text {
     visibility:visible;
-    font-weight: bold;
-    font-size: 300px;
+    font-weight: bolder;
+    font-size: var(--size-hoverbig);
     color: var(--secondary);
 }
 
 .tema_2 #section_wide_grid .box_1:hover .text_1 {
     visibility:visible;
     font-weight: bold;
-    font-size: var(--space-xxl);
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_2 #section_wide_grid .box_2:hover .text_2 {
     visibility:visible;
     font-weight: bold;
-    font-size: var(--space-xxl);
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_2 #section_wide_grid .box_3:hover .text_3 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
@@ -614,29 +629,29 @@ margin-right: 0;
 
 .tema_3 #section_wide:hover .text {
     visibility:visible;
-    font-weight: bold;
-    font-size: 300px;
+    font-weight: bolder;
+    font-size: var(--size-hoverbig);
     color: var(--secondary);
 }
 
 .tema_3 #section_wide_grid .box_1:hover .text_1 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_3 #section_wide_grid .box_2:hover .text_2 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_3 #section_wide_grid .box_3:hover .text_3 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
@@ -710,29 +725,29 @@ margin-right: 0;
 
 .tema_4 #section_wide:hover .text {
     visibility:visible;
-    font-weight: bold;
-    font-size: 300px;
+    font-weight: bolder;
+    font-size: var(--size-hoverbig);
     color: var(--secondary);
 }
 
 .tema_4 #section_wide_grid .box_1:hover .text_1 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_4 #section_wide_grid .box_2:hover .text_2 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_4 #section_wide_grid .box_3:hover .text_3 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
@@ -799,29 +814,29 @@ margin-right: 0;
 
 .tema_5 #section_wide:hover .text {
     visibility:visible;
-    font-weight: bold;
-    font-size: 300px;
+    font-weight: bolder;
+    font-size: var(--size-hoverbig);
     color: var(--secondary);
 }
 
 .tema_5 #section_wide_grid .box_1:hover .text_1 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_5 #section_wide_grid .box_2:hover .text_2 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
 .tema_5 #section_wide_grid .box_3:hover .text_3 {
     visibility:visible;
-    font-weight: bold;
-    font-size: var(--space-xxl);
+    font-weight: bolder;
+    font-size: var(--size-hoversmall);
     color: var(--secondary);
 }
 
