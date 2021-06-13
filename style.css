@@ -31,11 +31,11 @@ html {
     --size-h4phone:1.5rem;
     --size-h4desktop:3rem;
     --size-aphone:1rem;
-    --size-adesktop:1.2rem;
+    --size-adesktop:1.1rem;
     --size-pphone:1rem;
-    --size-pdesktop:1.2rem;
+    --size-pdesktop:1.1rem;
     --size-liphone:1rem;
-    --size-lidesktop:1rem;
+    --size-lidesktop:1.1rem;
   }
 
 body{
@@ -83,37 +83,6 @@ header nav ul {
     overflow-x: auto;
 }
 
-/**************************************************** BREADCRUMBS */
-
-/* Style the list */
-.breadcrumb {
-    grid-column: 1/4;
-    padding: 10px 16px;
-    list-style: none;
-    background-color: var(--quaternary);
-  }
-  
-  /* Display list items side by side */
-  .breadcrumb li {
-    display: inline;
-    font-family: 'Karla', sans-serif;
-    letter-spacing: var(--space-xxs);
-    font-size: var(--size-liphone);
-    color: var(--secondary);
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  .breadcrumb li+li:before {
-    padding: 8px;
-    color: var(--accent);
-    content: "/\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  .breadcrumb li a {
-    color: var(--accent);
-  }
-
 /**************************************************** GENERELT */
 
 main {
@@ -159,13 +128,13 @@ h3 {
 }
 
 h4 {
-    font-family: 'Spectral', serif;
+    font-family: 'Karla', sans-serif;
     font-size: var(--size-h4phone);
     letter-spacing: var(--space-xxxs);
     color: var(--accent);
 }
 
-p{
+p {
     font-family: 'Karla', sans-serif;
     font-size: var(--size-pphone);
     line-height: var(--space-lg);
@@ -200,6 +169,36 @@ button {
 .link:hover {
     color:var(--accent);
 }
+
+/**************************************************** BREADCRUMBS */
+
+/* Style the list */
+.breadcrumb {
+    grid-column: 1/4;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: var(--quaternary);
+  }
+  
+  /* Display list items side by side */
+  .breadcrumb li {
+    display: inline;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: var(--space-xxs);
+    color: var(--secondary);
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--accent);
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  .breadcrumb li a {
+    color: var(--accent);
+  }
 
 /**************************************************** FOOTER*/
 
@@ -378,7 +377,8 @@ form label {
     font-size: var(--size-pphone);
     line-height: var(--space-lg);
     color: var(--secondary);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xs);
+    margin-top: var(--space-md);
   }
   
   .form_felt {
@@ -427,12 +427,14 @@ footer{
     color: var(--secondary);
   }
 
+  .breadcrumb li {
+    font-size: var(--size-lidesktop);
+}
+
 /******************************************** TEXTER */
 
 h1 {
     font-size: var(--size-h1desktop);
-    /* letter-spacing: 5px; */
-    /* color: var(--secondary); */
 }
 
 h2{
@@ -537,6 +539,10 @@ margin-right: 0;
 
 .image_right{
     grid-column: 2/4 ;
+}
+
+.index .text_left button {
+   margin-left: 9rem;
 }
 
 /**************************************************** GENERELT TEMA 2*/
