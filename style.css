@@ -9,7 +9,6 @@ html {
     --tertiary: #8090A7;
     --quaternary: #BEA094;
     --accent: #F9ECE4;
-    --text: #fff;
   
     --space-xxxs: 0.10rem;
     --space-xxs: 0.25rem;
@@ -21,8 +20,8 @@ html {
     --space-xxl: 6rem;
     --space-xxxl: 18rem;
 
-    --size-hoverbig:6rem;
-    --size-hoversmall:4rem;
+    --size-hoverbig:15rem;
+    --size-hoversmall:6rem;
     --size-h1phone:2.4rem;
     --size-h1desktop:4rem;
     --size-h2phone:2rem;
@@ -32,9 +31,9 @@ html {
     --size-h4phone:1.5rem;
     --size-h4desktop:3rem;
     --size-aphone:1rem;
-    --size-adesktop:1rem;
+    --size-adesktop:1.2rem;
     --size-pphone:1rem;
-    --size-pdesktop:1rem;
+    --size-pdesktop:1.2rem;
     --size-liphone:1rem;
     --size-lidesktop:1rem;
   }
@@ -444,6 +443,10 @@ p, .link{
     font-size: var(--size-pdesktop);
 }
 
+a{
+    font-size: var(--size-adesktop);
+}
+
 header a{
     font-size: var(--size-adesktop);
 }
@@ -470,6 +473,10 @@ a:hover {
 button:hover {
     background-color: var(--secondary);
 }
+
+form label {
+    font-size: var(--size-pdesktop);
+  }
 
 /******************************************** LAYOUT */
 
