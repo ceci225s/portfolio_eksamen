@@ -11,6 +11,7 @@ html {
     --accent: #F9ECE4;
     --text: #fff;
   
+    --space-xxxs: 0.10rem;
     --space-xxs: 0.25rem;
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -72,10 +73,17 @@ main {
     grid-template-columns: 1fr minmax(0, 1200px) 1fr;
 }
 
+section {
+    grid-column: 2/3;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    margin-left: var(--space-sm);
+    margin-right: var(--space-sm);
+}
 
 h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-xl);
+    font-size: var(--space-lg);
     letter-spacing: var(--space-xs);
     color: var(--secondary);
     margin-top: var(--space-sm);
@@ -88,7 +96,7 @@ h1 {
 
 h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: var(--space-lg);
+    font-size: var(--space-md);
     letter-spacing: var(--space-xs);
     color: var(--secondary);
     margin-bottom: var(--space-xl);
@@ -104,6 +112,15 @@ h3 {
     margin-top: var(--space-lg);
 }
 
+p{
+font-family: 'Oswald', sans-serif;
+letter-spacing: var(--space-xxxs);
+font-size: var(--space-sm);
+font-weight: lighter;
+color: var(--secondary);
+margin-bottom: var(--space-lg);
+}
+
 p .bold {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
@@ -116,10 +133,6 @@ a{
     font-size: var(--space-sm);
     color: var(--secondary);
     text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent);
 }
 
 button {
@@ -144,12 +157,11 @@ footer{
     background-color: var(--secondary);
     place-content: center;
     height: var(--space-xxxl);
-    margin-top: var(--space-xxl);
 }
 
 footer p{
     color: var(--primary);
-  grid-row: 2/3;
+    grid-row: 2/3;
 }
 
 /**************************************************** BREADCRUMBS */
@@ -192,21 +204,6 @@ ul.breadcrumb {
 
 /**************************************************** GENERELT INDEX*/
 
-.index section {
-    grid-column: 2/3;
-    margin-bottom: var(--space-md);
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-.index p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-    margin-bottom: var(--space-lg);
-}
 
 .cta{
     display: grid;
@@ -218,22 +215,6 @@ ul.breadcrumb {
 }
 
 /**************************************************** GENERELT TEMA 2*/
-
-.tema_2 section {
-    grid-column: 2/3;
-    margin-bottom: var(--space-xxl);
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-.tema_2 p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-    margin-bottom: var(--space-lg);
-}
 
 .tema_2 #section_wide {
     display: grid;
@@ -323,21 +304,6 @@ ul.breadcrumb {
 
 /**************************************************** GENERELT TEMA 3*/
 
-.tema_3 section {
-    grid-column: 2/3;
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-.tema_3 p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-    margin-bottom: var(--space-lg);
-}
-
 .tema_3 #section_wide_grid .box_3 .text_3 {
     grid-area: 2/1;
     text-align: center;
@@ -361,22 +327,6 @@ ul.breadcrumb {
 }  
 
 /**************************************************** GENERELT TEMA 5*/
-
-.tema_5 section {
-    grid-column: 2/3;
-    margin-bottom: var(--space-xxl);
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-.tema_5 p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-    margin-bottom: var(--space-lg);
-}
 
 .tema_5 #section_wide {
     display: grid;
@@ -464,42 +414,7 @@ ul.breadcrumb {
     visibility:hidden;
 }  
 
-.profil section {
-    grid-column: 2/3;
-    margin-bottom: var(--space-xxl);
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-
-.profil p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-    margin-bottom: var(--space-sm);
-}
-
-.profil .image_right{
-    grid-column: 2/3 ;
-}
-
 /**************************************************** GENERELT KONTAKT*/
-
-.contact section {
-    grid-column: 2/3;
-    margin-left: var(--space-md);
-    margin-right: var(--space-md);
-}
-
-.contact p{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-weight: lighter;
-    color: var(--secondary);
-}
 
 form label {
     font-family: 'Oswald', sans-serif;
@@ -529,7 +444,7 @@ header .logo {
     margin-bottom: 0;
 }
 
-footer {
+footer{
     margin-top: 0;
 }
 
@@ -548,6 +463,10 @@ h2{
 
 p, .link{
     font-size: 1.5vw;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 .index #section_wide:hover{
@@ -921,11 +840,16 @@ margin-right: 0;
 .profil .section_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
 }
 
-.profil .text_left{
-    display: grid;
+.profil .image_left {
     grid-column: 1/2;
+}
+
+.profil .text_right{
+    /* display: grid; */
+    grid-column: 2/3;
     text-align: left;
     padding: 20px;
 }
