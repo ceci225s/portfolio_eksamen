@@ -25,10 +25,10 @@ html {
     --size-h1phone:2.4rem;
     --size-h1desktop:4rem;
     --size-h2phone:2rem;
-    --size-h2desktop:3rem;
-    --size-h3phone:1.5rem;
+    --size-h2desktop:3.3rem;
+    --size-h3phone:1.7rem;
     --size-h3desktop:3rem;
-    --size-h4phone:1.5rem;
+    --size-h4phone:1rem;
     --size-h4desktop:3rem;
     --size-aphone:1rem;
     --size-adesktop:1.1rem;
@@ -114,8 +114,6 @@ h2 {
     font-size: var(--size-h2phone);
     letter-spacing: var(--space-xxs);
     color: var(--secondary);
-    margin-bottom: var(--space-xl);
-    margin-top: var(--space-xxl);
 }
 
 h3 {
@@ -132,6 +130,7 @@ h4 {
     font-size: var(--size-h4phone);
     letter-spacing: var(--space-xxxs);
     color: var(--accent);
+    font-weight: bold;
 }
 
 p {
@@ -166,9 +165,7 @@ button {
     grid-column: 1;
 }
 
-.link:hover {
-    color:var(--accent);
-}
+
 
 /**************************************************** BREADCRUMBS */
 
@@ -239,7 +236,12 @@ footer p{
 .index .section_one{
     margin-bottom: var(--space-xxl);
     margin-top: var(--space-xl);
-}   
+}  
+
+.index #section_wide{
+    margin-bottom: var(--space-xl);
+    margin-top: var(--space-xl);
+}  
 
 .contact .section_one{
     margin-bottom: var(--space-xxl);
@@ -447,6 +449,30 @@ header a{
     font-size: var(--size-adesktop);
 }
 
+
+
+.cta{
+    display: flex;
+    place-content: center;
+    gap: var(--space-xl);
+}
+
+
+
+form label {
+    font-size: var(--size-pdesktop);
+  }
+
+  /******************************************** HOVER */
+
+button:hover {
+    background-color: var(--secondary);
+}
+
+.link:hover {
+    color:var(--accent);
+}
+
 header a:hover {
     color: #192E59;
     text-decoration: line-through;
@@ -456,23 +482,14 @@ a:hover {
     color: var(--accent);
 }
 
-.index #section_wide:hover{
+.index .text_left:hover{
     background-color: var(--primary);
 }
 
-.cta{
-    display: flex;
-    place-content: center;
-    gap: var(--space-xl);
+.index .text_right:hover{
+    background-color: var(--tertiary);
 }
 
-button:hover {
-    background-color: var(--secondary);
-}
-
-form label {
-    font-size: var(--size-pdesktop);
-  }
 
 /******************************************** LAYOUT */
 
