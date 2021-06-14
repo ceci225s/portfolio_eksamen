@@ -333,12 +333,6 @@ footer p{
     visibility:hidden;
 }  
 
-.tema_4 #section_wide_grid .box_3 .text_3 {
-    grid-area: 2/1;
-    text-align: center;
-    visibility:hidden;
-} 
-
 /**************************************************** GENERELT TEMA 5*/
 
 .tema_5 .section_one{
@@ -739,7 +733,7 @@ margin-right: 0;
 .tema_4 #section_wide:hover .text {
     visibility:visible;
     font-weight: bolder;
-    font-size: var(--size-hoverbig);
+    font-size: 9rem;
     color: var(--secondary);
 }
 
@@ -757,13 +751,6 @@ margin-right: 0;
     color: var(--secondary);
 }
 
-.tema_4 #section_wide_grid .box_3:hover .text_3 {
-    visibility:visible;
-    font-weight: bolder;
-    font-size: var(--size-hoversmall);
-    color: var(--secondary);
-}
-
 .tema_4 #section_wide {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
@@ -775,7 +762,7 @@ margin-right: 0;
 } 
 .tema_4 #section_wide_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
 }  
 
@@ -785,10 +772,6 @@ margin-right: 0;
 
 .tema_4 #section_wide_grid .box_2 {
     grid-column: 2/3;
-}  
-
-.tema_4 #section_wide_grid .box_3 {
-    grid-column: 3/4;
 }  
 
 .tema_4 #section_wide_grid .box_1 {
@@ -806,15 +789,6 @@ margin-right: 0;
     margin: 0;
 }  
 .tema_4 #section_wide_grid .box_2 .image_2 {
-    grid-area: 1/1;
-    grid-row: 1/4;
-}  
-.tema_4 #section_wide_grid .box_3 {
-    display: grid;
-    grid-template-rows: 1fr auto 1fr;
-    margin: 0;
-} 
-.tema_4 #section_wide_grid .box_3 .image_3 {
     grid-area: 1/1;
     grid-row: 1/4;
 }  
