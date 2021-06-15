@@ -215,7 +215,7 @@ footer p{
     margin: 0;
 }
 
-/**************************************************** GENERELT INDEX*/
+/**************************************************** NDEX*/
 
 .index .section_one{
     margin-bottom: var(--space-xxl);
@@ -232,21 +232,35 @@ footer p{
     margin-bottom: var(--space-lg);
 }
 
-/**************************************************** GENERELT PROFIL*/
+/**************************************************** PROFIL*/
 
 .profil .section_one{
     margin-bottom: var(--space-xxl);
     margin-top: var(--space-xl);
 }   
 
-/**************************************************** GENERELT CONTACT*/
+/**************************************************** CONTACT*/
 
 .contact .section_one{
     margin-bottom: var(--space-lg);
     margin-top: var(--space-xl);
 }   
 
-/**************************************************** GENERELT TEMA 2*/
+form label {
+    font-family: 'Karla', sans-serif;
+    font-size: var(--size-pphone);
+    line-height: var(--space-lg);
+    color: var(--secondary);
+    margin-bottom: var(--space-xs);
+    margin-top: var(--space-md);
+    font-weight: bolder;
+  }
+  
+  .form_felt {
+    display: grid;
+  }
+
+/**************************************************** TEMA 2*/
 
 
 .tema_2 .section_one{
@@ -270,7 +284,7 @@ footer p{
     padding-bottom: var(--space-sm);
 }
 
-/**************************************************** GENERELT TEMA 3*/
+/**************************************************** TEMA 3*/
 
 .tema_3 .section_one{
     margin-bottom: var(--space-xxl);
@@ -293,7 +307,7 @@ footer p{
     padding-bottom: var(--space-sm);
 }
 
-/**************************************************** GENERELT TEMA 5*/
+/**************************************************** TEMA 5*/
 
 .tema_4 .section_one{
     margin-bottom: var(--space-xxl);
@@ -311,7 +325,7 @@ footer p{
     padding-bottom: var(--space-sm);
 }
 
-/**************************************************** GENERELT TEMA 5*/
+/**************************************************** TEMA 5*/
 
 .tema_5 .section_one{
     margin-bottom: var(--space-xxl);
@@ -330,21 +344,6 @@ footer p{
     padding-bottom: var(--space-sm);
 }
 
-/**************************************************** GENERELT KONTAKT*/
-
-form label {
-    font-family: 'Karla', sans-serif;
-    font-size: var(--size-pphone);
-    line-height: var(--space-lg);
-    color: var(--secondary);
-    margin-bottom: var(--space-xs);
-    margin-top: var(--space-md);
-    font-weight: bolder;
-  }
-  
-  .form_felt {
-    display: grid;
-  }
 
 
 
@@ -407,7 +406,7 @@ footer .boks {
     text-align: left;
 }
 
-/******************************************** TEXTER */
+/******************************************** GENERELT */
 
 h1 {
     font-size: var(--size-h1desktop);
@@ -465,6 +464,7 @@ a:hover {
 .breadcrumb li a:hover {
     color: var(--secondary);
   }
+
 /******************************************** LAYOUT */
 
 section{
