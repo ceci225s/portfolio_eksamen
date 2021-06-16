@@ -123,15 +123,6 @@ h3 {
     margin-top: var(--space-lg);
 }
 
-h4 {
-    font-family: 'Karla', sans-serif;
-    font-size: var(--size-h4phone);
-    letter-spacing: var(--space-xxxs);
-    color: var(--background);
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
 p {
     font-family: 'Karla', sans-serif;
     font-size: var(--size-pphone);
@@ -206,10 +197,12 @@ footer{
     place-content: center;
 }
 
-footer address {
+footer address p {
    text-align: center; 
    margin-bottom: var(--space-sm);
    font-style: normal;
+   color: var(--background);
+   letter-spacing: var(--space-xxs);
 }
 
 /**************************************************** NDEX*/
