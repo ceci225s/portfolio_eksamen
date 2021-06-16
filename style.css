@@ -209,6 +209,7 @@ footer{
 footer address {
    text-align: center; 
    margin-bottom: var(--space-sm);
+   font-style: normal;
 }
 
 /**************************************************** NDEX*/
@@ -550,6 +551,11 @@ grid-template-rows: 1fr auto 1fr;
 }
 
 /**************************************************** INDEX*/
+
+.index section{
+    margin-right: 0;
+    margin-left: 0;
+}
 
 .index .section_one{
     margin-bottom: var(--space-xl);
